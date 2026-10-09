@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meet the Campus Leadership — ISUFST San Enrique Campus</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --foam:#f3fbfa; --sea1:#d9f0ee; --sea2:#a9d9d8; --sea3:#1c6f7c; --deep:#0a2536; --abyss:#061a29;
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; font-family:'Manrope',system-ui,sans-serif; line-height:1.5; color:var(--deep); background:var(--foam); }
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 28px; }
+
+  /* header: the surface */
+  header{ background:var(--foam); padding:64px 0 56px; text-align:center; }
+  .school{ margin:0 0 20px; font-weight:600; font-size:.95rem; color:var(--sea3); }
+  h1{ font-family:'Sora',sans-serif; font-weight:700; font-size:clamp(2.2rem,6vw,4rem); line-height:1.05; letter-spacing:-.02em; margin:0 auto; max-width:16ch; }
+  .meta{ margin:22px 0 0; color:#3f6068; }
+
+  /* tiers: each level sits deeper than the last */
+  .tier{ padding:72px 0; }
+  .tier .wrap{ display:flex; flex-direction:column; align-items:center; gap:44px; text-align:center; }
+  .tier-head{ max-width:34rem; }
+  .tier-head h2{ font-family:'Sora',sans-serif; font-weight:600; font-size:1.5rem; line-height:1.2; margin:0 0 8px; }
+  .tier-head p{ margin:0; opacity:.85; }
+  .t1{ background:var(--sea1); }
+  .t2{ background:var(--sea2); }
+  .t3{ background:var(--sea3); color:#fff; }
+  .t4{ background:var(--deep); color:#fff; }
+
+  /* people: portholes */
+  .roster{ display:flex; flex-wrap:wrap; justify-content:center; gap:40px 32px; width:100%; }
+  .roster .person{ flex:0 0 var(--w); max-width:100%; }
+  .roster.pair{ --size:150px; --w:250px; }
+  .roster.deans{ --size:128px; --w:210px; }
+  .roster.faculty{ --size:108px; --w:170px; }
+  .roster.solo{ --size:200px; --w:420px; }
+
+  .person{ text-align:center; }
+  .photo{
+    position:relative; width:var(--size); aspect-ratio:1; margin:0 auto 14px; border-radius:50%;
+    background:color-mix(in srgb,currentColor 12%,transparent);
+    box-shadow:0 0 0 4px color-mix(in srgb,currentColor 24%,transparent);
+    display:flex; align-items:center; justify-content:center;
+  }
+  .photo img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .initials{ font-family:'Sora',sans-serif; font-weight:700; font-size:calc(var(--size) * .3); opacity:.6; }
+
+  .person h3{ font-family:'Sora',sans-serif; font-weight:600; font-size:1rem; line-height:1.3; margin:0; }
+  .role{ margin:4px 0 0; font-weight:600; font-size:.9rem; }
+  .dept{ margin:2px 0 0; font-size:.85rem; opacity:.85; }
+
+  .solo h3{ font-size:2rem; }
+  .solo .role{ font-size:1.05rem; }
+
+  footer{ background:var(--abyss); color:#fff; padding:40px 0 56px; }
+  footer{ text-align:center; }
+  footer .wrap{ display:flex; flex-direction:column; align-items:center; gap:8px; }
+  footer p{ margin:0; }
+  .motto{ font-family:'Sora',sans-serif; font-weight:600; }
+  .est{ font-size:.9rem; color:#a9c3cb; }
+
+  @media (max-width:820px){
+    .tier{ padding:52px 0; }
+    .tier .wrap{ gap:32px; }
+    .roster.deans{ --w:150px; }
+    .roster.faculty{ --w:140px; }
+    .solo h3{ font-size:1.6rem; }
+  }
+  @media (max-width:420px){
+    .wrap{ padding:0 18px; }
+    .roster.pair{ --w:100%; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="school">Iloilo State University of Fisheries Science &amp; Technology</p>
+    <h1>Meet the Campus Leadership</h1>
+  </div>
+</header>
+
+  <section class="tier t1">
+    <div class="wrap">
+      <div class="tier-head">
+        <h2>University Level</h2>
+        <p>Office of the President</p>
+      </div>
+      <div class="roster solo">
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">NS</span><img src="1.jfif" alt="Dr. Nordy D. Siason Jr." onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Nordy D. Siason Jr.</h3>
+          <p class="role">University President</p>
+          <p class="dept">Office of the President</p>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tier t2">
+    <div class="wrap">
+      <div class="tier-head">
+        <h2>Campus Officials</h2>
+        <p>ISUFST San Enrique Campus</p>
+      </div>
+      <div class="roster pair">
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">MD</span><img src="2.jfif" alt="Dr. Michael B. Dizon" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Michael B. Dizon</h3>
+          <p class="role">Campus Administrator</p>
+          <p class="dept">ISUFST San Enrique Campus</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">MP</span><img src="3.jfif" alt="Melby P. Parreño" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Melby P. Parreño</h3>
+          <p class="role">Administrative Officer</p>
+          <p class="dept">Finance &amp; General Services</p>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tier t3">
+    <div class="wrap">
+      <div class="tier-head">
+        <h2>Academic Deans</h2>
+        <p>Deans of Colleges &amp; Departments</p>
+      </div>
+      <div class="roster deans">
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">WP</span><img src="4.jfif" alt="Dr. Wenda D. Panes Ed.D" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Wenda D. Panes</h3>
+          <p class="role">Dean</p>
+          <p class="dept">College of Informatics &amp; Computer Innovation</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">RE</span><img src="5.jfif" alt="Dr. Rene T. Estomo" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Rene T. Estomo</h3>
+          <p class="role">Dean</p>
+          <p class="dept">College of Education</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">NG</span><img src="6.jfif" alt="Noli L. Gerona" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Noli L. Gerona</h3>
+          <p class="role">Dean</p>
+          <p class="dept">College of Agriculture</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">JC</span><img src="7.jfif" alt="Janice H. Ching" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Janice H. Ching</h3>
+          <p class="role">Dean</p>
+          <p class="dept">College of Management</p>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="tier t4">
+    <div class="wrap">
+      <div class="tier-head">
+        <h2>College of Informatics &amp; Computer Innovation</h2>
+        <p>Faculty Members &amp; Support Staff</p>
+      </div>
+      <div class="roster faculty">
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">WP</span><img src="4.jfif" alt="Dr. Wenda D. Panes Ed.D" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Wenda D. Panes</h3>
+          <p class="role">Dean / Faculty</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">DT</span><img src="12.jfif" alt="Instr. Dave Allan Tagacay" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Instr. Dave Allan Tagacay</h3>
+          <p class="role">Instructor</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">WB</span><img src="9.jfif" alt="Dr. Wenna J. Bulnes" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Wenna J. Bulnes</h3>
+          <p class="role">Faculty</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">AA</span><img src="10.jfif" alt="Dr. Analiza G. Alingalan" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Analiza G. Alingalan</h3>
+          <p class="role">Faculty</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">DD</span><img src="11.jfif" alt="Dr. Dythne P. Dacudao" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Dythne P. Dacudao</h3>
+          <p class="role">Faculty</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">IS</span><img src="8.jfif" alt="Dr. Ian P. Sugatan" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Dr. Ian P. Sugatan</h3>
+          <p class="role">Faculty</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">IV</span><img src="13.jfif" alt="Instr. Ivan Silvestre" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Instr. Ivan Silvestre</h3>
+          <p class="role">Instructor</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">AD</span><img src="14.jfif" alt="Andrea Delos Santos" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Andrea Delos Santos</h3>
+          <p class="role">Staff</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      <article class="person">
+        <div class="photo"><span class="initials" aria-hidden="true">MB</span><img src="15.jfif" alt="Michael Borcillo" onerror="this.remove()"></div>
+        <div class="info">
+          <h3>Michael Borcillo</h3>
+          <p class="role">Staff</p>
+          <p class="dept">CICI</p>
+        </div>
+      </article>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="wrap">
+    <p class="motto">Science serves the sea, technology serves the future.</p>
+    <p class="est">ISUFST San Enrique Campus, Est. 2026</p>
+  </div>
+</footer>
+
+</body>
+</html>
